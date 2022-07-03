@@ -6,6 +6,11 @@ import { SearchInput } from "../../atoms";
 import { DropdownContent } from "./composition/dropdown-content/DropdownContent";
 import { Container } from "./JokesSearchBar.styles";
 
+// * Currently dropdown display only results from page 1
+// * API doesn't allow us to fetch all jokes
+// * In the description I can't find any requirements about paging or infinite scroll
+// * If we want to display large amount of data, we can think about virtual list inside dropdown content
+
 export const JokesSearchBar: FC = () => {
   const ref = useRef<HTMLDivElement>(null);
   const [searchValue, setSearchValue] = useState("");
