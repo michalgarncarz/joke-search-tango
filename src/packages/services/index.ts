@@ -1,1 +1,1 @@
-export * from "./jokesApi";
+export * from "./container/jokesApi";

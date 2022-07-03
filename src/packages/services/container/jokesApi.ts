@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { GetJokesByPhraseResponse } from "../types";
+import { GetJokesByPhraseResponse } from "../../types";
 
 export const jokesApi = createApi({
   reducerPath: "jokesApi",
